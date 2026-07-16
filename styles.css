@@ -1,0 +1,199 @@
+:root {
+  color-scheme: light;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f7fb;
+  color: #14213d;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(135deg, #eef3ff 0%, #f8fbff 100%);
+  min-height: 100vh;
+}
+
+.app-shell {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #4f6ef7;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.hero-text {
+  margin: 8px 0 0;
+  color: #60708a;
+  max-width: 600px;
+}
+
+.admin-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: #fff;
+  box-shadow: 0 8px 24px rgba(20, 33, 61, 0.06);
+  font-weight: 600;
+}
+
+.content-grid {
+  display: grid;
+  gap: 24px;
+  grid-template-columns: minmax(300px, 420px) 1fr;
+}
+
+.panel {
+  background: #fff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 12px 32px rgba(20, 33, 61, 0.08);
+}
+
+.panel h2 {
+  margin-top: 0;
+}
+
+.field-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+label {
+  font-weight: 600;
+}
+
+select,
+textarea,
+button {
+  border-radius: 12px;
+  border: 1px solid #d8e1ef;
+  font: inherit;
+}
+
+select,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  background: #f9fbff;
+}
+
+textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button {
+  padding: 12px 16px;
+  background: #4f6ef7;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+button:hover {
+  background: #3557d9;
+}
+
+.panel-header p {
+  margin: 4px 0 0;
+  color: #6a7484;
+}
+
+.feed-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.kudos-card {
+  border: 1px solid #e5ebf5;
+  border-radius: 16px;
+  padding: 14px 16px;
+  background: #fbfdff;
+}
+
+.kudos-card .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  color: #44506b;
+  font-size: 0.95rem;
+}
+
+.kudos-card .message {
+  color: #1d2a3f;
+  line-height: 1.5;
+}
+
+.admin-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.admin-actions button {
+  padding: 8px 10px;
+  font-size: 0.9rem;
+  border-radius: 999px;
+}
+
+.hidden-card {
+  border-color: #ffd9a8;
+  background: #fff8eb;
+}
+
+.admin-section {
+  margin-top: 16px;
+  border-top: 1px solid #e7ebf3;
+  padding-top: 16px;
+}
+
+.empty-state {
+  padding: 16px;
+  text-align: center;
+  color: #6a7484;
+  border: 1px dashed #d6deea;
+  border-radius: 12px;
+}
+
+@media (max-width: 860px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
